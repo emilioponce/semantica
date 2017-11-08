@@ -10,57 +10,109 @@ html, body {
   font-weight: 300;
   font-size: 35px;
   text-rendering: optimizeLegibility;
-  /* optimizeLegibility: The browser emphasizes legibility over rendering speed and geometric precision */
   overflow-x: hidden;
-  /* overflow-x: Content is clipped, with no scrollbars */
+  background-color: #ececec;
+  color: #fff;
 }
 
 #App {
   display: grid;
   height: 100vh;
-  grid-template-areas: "head head head" "left main right" "foot foot foot";
-  grid-template-columns: 1fr 6fr 1fr;
+  grid-template-areas:
+  "titl titl cont user"
+  "left main main right"
+  "foot foot foot foot";
+  grid-template-columns: 1fr 9fr 2fr 1fr;
   grid-template-rows: 2fr 12fr 1fr;
-  grid-gap: 3px;
 }
 
-header {
-  grid-area: head;
-  background-color: #8ca0ff;
-  padding: 27px;
+.main-title {
+  grid-area: titl;
+  background-color: #4b32bd;
+  padding: 20px 0 0 20px;
 }
 
-main {
-  grid-area: main;
-  background-color: #ffff64;
+.controls {
+  grid-area: cont;
+  background-color: #4b32bd;
+  padding-top: 30%;
+  font-size: 70%;
+  text-align: center;
 }
 
-footer {
-  grid-area: foot;
-  background-color: #8cffa0;
-  text-align: right;
-  padding: 1%;
-  font-size: 80%;
+.user {
+  grid-area: user;
+  background-color: #4b32bd;
 }
 
 .left-sidebar {
   grid-area: left;
 }
 
+main {
+  grid-area: main;
+}
+
 .right-sidebar {
   grid-area: right;
 }
 
+footer {
+  grid-area: foot;
+  background-color: #656161;
+  text-align: right;
+  padding: 1%;
+  font-size: 70%;
+}
+
 .word {
   margin: 2%;
+  padding: 5%;
   line-height: 145%;
+  color: #918c8c;
+  background-color: #fff;
 }
 
 .word-name {
   font-size: 200%;
+  color: black;
+  font-style: italic;
 }
 
 .word-description {
-  margin-top: 5%;
-  font-size: 90%;
+  margin-top: 4%;
+}
+
+/* ----- HEADERS ----- */
+
+h1,
+h2,
+h3 {
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin-top: 0; /*  elimina espacio imagen fondo arriba*/
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 220%;
+  word-spacing: 4px;
+  letter-spacing: 1px;
+}
+
+
+/* ----- LINKS ----- */
+
+a:link, a:visited {
+  color: #e67e22;
+  text-decoration: none;
+  padding-bottom: 1px;
+  -webkit-transition: border-bottom 0.2s, color 0.2s;
+  transition: border-bottom 0.2s, color 0.2s;
+}
+
+a:hover, a:active {
+  color: #dbd7d7;
+  border-bottom: 1px solid transparent;
 }

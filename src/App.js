@@ -3,16 +3,19 @@ import React, {Component} from 'react';
 import './App.css';
 
 import Word from './Word';
+import MainTitle from './MainTitle';
+import Controls from './Controls';
+import User from './User';
 
 class App extends Component {
   render() {
     return (
       <div id="App">
-        <header>Título de la aplicación</header>
+        <MainTitle/><Controls/><User/>
         <div className="left-sidebar"/ >
         <main><Word/></main>
         <div className="right-sidebar" />
-        <footer>Aviso Legal | Créditos | Atribución </footer>
+        <footer><a href="#">Aviso Legal</a> | <a href="#">Atribución</a></footer>
      </div>);
   }
 }

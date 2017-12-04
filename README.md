@@ -1,16 +1,18 @@
-# semántica
+# Semantica
 
-## An spanish unusual word with it's meaning.
+## An unusual word with it's meaning.
 
-Proof of concept. PWA featuring:
+Architecture:
 
 * create-react-app bootstrapping
-* APP-Shell
-* Manifest
-* Push notification: 'New word available'
+* Express as a proxy API
 * CSS-GRID layout
 
+PWA features:
 
+* Push notification: 'New word available'
+* APP-Shell
+* Manifest
 
 
 Work in progress ...

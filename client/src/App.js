@@ -63,8 +63,9 @@ class App extends Component {
       <main><Word/></main>
       <div className="right-sidebar"/>
       <footer>
-        <a href="#">Aviso Legal</a>
-        <a href="#">Atribución</a>
+        <a href="#">Contact information</a>
+        <a href="#">License</a>
+        <a href="#">Attribution</a>
       </footer>
     </div>);
   }

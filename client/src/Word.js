@@ -22,6 +22,7 @@ class Word extends Component {
     return (<div className="word">
       <div className="word-name">{data.word}</div>
       <div className="word-description">{data.description}</div>
+      <div className="word-example">"{data.example}"</div>
     </div>)
   }
 }

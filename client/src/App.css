@@ -8,7 +8,7 @@
 html, body {
   font-family: 'Lato', 'Arial', sans-serif;
   font-weight: 300;
-  font-size: 35px;
+  font-size: 30px;
   text-rendering: optimizeLegibility;
   overflow-x: hidden;
   background-color: #ececec;
@@ -84,6 +84,13 @@ footer > a {
 
 .word-description {
   margin-top: 4%;
+}
+
+.word-example {
+  margin-top:4%;
+  font-size: 80%;
+  color: olive;
+  font-style: italic;
 }
 
 /* ----- HEADERS ----- */

@@ -19,7 +19,7 @@ html, body {
   display: grid;
   height: 100vh;
   grid-template-areas:
-  "titl titl cont user"
+  "titl titl cont cont"
   "left main main right"
   "foot foot foot foot";
   grid-template-columns: 1fr 9fr 2fr 1fr;
@@ -35,13 +35,8 @@ html, body {
 .controls {
   grid-area: cont;
   background-color: #4b32bd;
-  padding: 63px 26px 0 0;
   text-align: right;
-}
-
-.user {
-  grid-area: user;
-  background-color: #4b32bd;
+  padding: 58px 20px 0 0;
 }
 
 .left-sidebar {
@@ -60,12 +55,8 @@ footer {
   grid-area: foot;
   background-color: #656161;
   text-align: right;
-  padding: 1%;
+  padding: 10px 20px 0 0;
   font-size: 70%;
-}
-
-footer > a {
-  margin: 10px;
 }
 
 .word {
@@ -82,7 +73,7 @@ footer > a {
   font-style: italic;
 }
 
-.word-description {
+.word-meaning {
   margin-top: 4%;
 }
 

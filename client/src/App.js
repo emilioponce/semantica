@@ -18,9 +18,7 @@ class App extends Component {
       <main><Word/></main>
       <div className="right-sidebar"/>
       <footer>
-        <a href="#">Contact information</a>
-        <a href="#">License</a>
-        <a href="#">Attribution</a>
+        <a href="http://github.com/emilioponce">Contacto</a>
       </footer>
     </div>);
   }

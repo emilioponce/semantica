@@ -12,7 +12,7 @@ class Word extends Component {
   }
 
   getData = () => {
-    fetch('/api/test')
+    fetch('/api/word')
     .then(res => res.json())
     .then(data => this.setState({data}));
   }
@@ -21,7 +21,7 @@ class Word extends Component {
     const {data} = this.state;
     return (<div className="word">
       <div className="word-name">{data.word}</div>
-      <div className="word-description">{data.description}</div>
+      <div className="word-meaning">{data.meaning}</div>
       <div className="word-example">"{data.example}"</div>
     </div>)
   }

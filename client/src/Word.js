@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 
 class Word extends Component {
 
-  // Initialize state
   state = {
     data: {}
   }

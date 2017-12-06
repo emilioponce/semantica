@@ -39,6 +39,13 @@ html, body {
   padding: 58px 20px 0 0;
 }
 
+.controls > button {
+  font-size: 80%;
+  background-color: #4b32bd;
+  border: none;
+  color: #e67e22;
+}
+
 .left-sidebar {
   grid-area: left;
 }
@@ -53,7 +60,7 @@ main {
 
 footer {
   grid-area: foot;
-  background-color: #656161;
+  background-color: #4b32bd;
   text-align: right;
   padding: 10px 20px 0 0;
   font-size: 70%;

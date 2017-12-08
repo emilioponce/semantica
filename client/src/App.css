@@ -29,7 +29,7 @@ html, body {
 .main-title {
   grid-area: titl;
   background-color: #4b32bd;
-  padding: 20px 0 0 20px;
+  padding: 10px 0 0 10px;
 }
 
 .controls {
@@ -68,7 +68,7 @@ footer {
 
 .word {
   margin: 2%;
-  padding: 5%;
+  padding: 4%;
   line-height: 145%;
   color: #918c8c;
   background-color: #fff;
@@ -86,9 +86,24 @@ footer {
 
 .word-example {
   margin-top:4%;
-  font-size: 80%;
+  font-size: 75%;
   color: olive;
   font-style: italic;
+}
+
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+button {
+  float: right;
+  background-color: Transparent;
+  border: none;
+  background-repeat:no-repeat;
+  cursor:pointer;
+  overflow: hidden;
+  outline:none;
 }
 
 /* ----- HEADERS ----- */
@@ -102,11 +117,10 @@ h3 {
 
 h1 {
   margin-top: 0; /*  elimina espacio imagen fondo arriba*/
-  margin-bottom: 20px;
+  margin-bottom: 0;
   color: #fff;
   font-size: 220%;
-  word-spacing: 4px;
-  letter-spacing: 1px;
+  letter-spacing: 3px;
 }
 
 

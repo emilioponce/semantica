@@ -2,8 +2,13 @@ import React, {Component} from 'react';
 
 class Word extends Component {
 
-  state = {
-    data: {}
+  constructor(props) {
+    super(props);
+    this.state = {
+      data: {},
+      id: 1
+    };
+    this.handleClick = this.handleClick.bind(this);
   }
 
   componentDidMount() {
@@ -16,14 +21,25 @@ class Word extends Component {
     .then(data => this.setState({data}));
   }
 
+  handleClick() {
+    this.getData();
+  }
+
   render() {
     const {data} = this.state;
-    return (<div className="word">
+
+    return (
+      <div className="word">
+    <button onClick={this.handleClick}>
+      <i className="material-icons md-48">refresh</i>
+    </button>
       <div className="word-name">{data.word}</div>
       <div className="word-meaning">{data.meaning}</div>
       <div className="word-example">"{data.example}"</div>
-    </div>)
+    </div>
+  );
   }
+
 }
 
 export default Word;

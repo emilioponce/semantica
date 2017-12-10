@@ -23,6 +23,11 @@ class Word extends Component {
 
   handleClick() {
     this.getData();
+    // reassign class word to see the css transition with every new word
+    var element = document.getElementsByClassName('word')[0];
+    element.classList.remove("word");
+    void element.offsetWidth;  // -> triggering reflow
+    element.classList.add("word");
   }
 
   render() {

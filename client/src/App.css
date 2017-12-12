@@ -23,7 +23,7 @@ html, body {
   "left main main right"
   "foot foot foot foot";
   grid-template-columns: 1fr 9fr 2fr 1fr;
-  grid-template-rows: 2fr 12fr 1fr;
+  grid-template-rows: 1fr 12fr 1fr;
 }
 
 .main-title {

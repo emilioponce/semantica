@@ -2,22 +2,18 @@
 
 ## An unusual word with it's meaning.
 
-### Architecture:
+### Architecture
 
-* create-react-app bootstrapping (react, webpack ..)
+* create-react-app bootstrapping
 * Express as a proxy API
 * CSS-GRID layout
-* Concurrently to get unic package.json in dev environment
+* 'Concurrently' library to get unic package.json in dev environment
 
-### PWA future features:
+### PWA future features
 
-* Push notifications: 'New word available'
+* Push notifications: 'New words available'
 * APP-Shell
 * Manifest
-
-
-Work in progress ...
-
 
 
 #### Install instructions

@@ -1,6 +1,6 @@
 const express = require('express');
 const path = require('path');
-const words = require('./../DB/db');
+const words = require('./DB/db');
 
 const app = express();
 
@@ -15,7 +15,7 @@ app.get('/api/word', (req, res) => {
 
 // The "catch-all" handler: for any request that doesn't match one above, send back React's index.html file.
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname + './../client/public/index.html'));
+  res.sendFile(path.join(__dirname + './../public/index.html'));
 });
 
 const port = process.env.PORT || 5000;
